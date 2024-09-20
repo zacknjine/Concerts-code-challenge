@@ -1,14 +1,57 @@
-# Description
-A simple README explaining how you should set up the database and run the project.
+# CONCERT CODE CHALLENGE
 
-## Getting Started
+## Description
+This project manages a concert domain with three main entities: Bands, Venues, and Concerts. It implements a many-to-many relationship between Bands and Venues using raw SQL queries.
 
-Before running your app, you should apply your migrations by executing the SQL files in your SQLite database with the code below;
+### Getting Started
+To get a local copy up and running, follow these simple steps:
 
-    * sqlite3 concerts.db < migrations/create_bands_table.sql
-    * sqlite3 concerts.db < migrations/create_venues_table.sql
-    * sqlite3 concerts.db < migrations/create_concerts_table.sql
+# Prerequisites
+* Python3
+* SQLite3 library
 
-The code above will set up your database schema and allow you to run the Python queries later.
+## Installation
+1. Clone the repository using the SSH key provided below:
+   ```bash
+   git@github.com:zacknjine/concert-code-challenge.git
 
-### HAPPY CODING!!
+2. If you don't have SQLite3 installed, you can do so by opening you terminal and runnning:
+* sudo apt install sqlite3
+
+#### Usage
+
+1. Create the database and tables using raw SQL commands.
+
+2. Define the schema for the concerts table, establishing relationships with Bands and Venues.
+
+3. Implement the following methods:
+
+  * Concert Methods
+
+     Concert.band()
+     Concert.venue()
+     Concert.hometown_show()
+     Concert.introduction()
+
+
+  ** Venue Methods
+
+      Venue.concerts()
+      Venue.bands()
+      Venue.concert_on(date)
+      Venue.most_frequent_band()
+
+
+ *** Band Methods
+
+      Band.concerts()
+      Band.venues()
+      Band.play_in_venue(venue, date)
+      Band.all_introductions()
+      Band.most_performances()
+
+
+
+##### License
+
+This project is licensed under the MIT License, see the LICENSE file for details.
