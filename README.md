@@ -26,7 +26,7 @@ To get a local copy up and running, follow these simple steps:
 
 3. Implement the following methods:
 
-  * Concert Methods
+  ** Concert Methods
 
      Concert.band()
      Concert.venue()
